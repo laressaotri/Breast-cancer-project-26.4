@@ -70,7 +70,7 @@ st.title("Hope in Pixels: Breast Cancer CT Classifier")
 st.write("Upload a **grayscale CT scan** to get a prediction and a sharp Grad-CAM heatmap overlay.")
 
 # --- Upload and Predict ---
-uploaded_file = st.file_uploader("🗆️ Upload a CT scan image (PNG, JPG)", type=["png", "jpg", "jpeg"])
+uploaded_file = st.file_uploader("🗆️🩻 Upload a CT scan image (PNG, JPG)", type=["png", "jpg", "jpeg"])
 
 if uploaded_file:
     image = Image.open(uploaded_file)
@@ -102,6 +102,6 @@ else:
 st.markdown("""
 ---
 <div style='text-align: center; color: #5C2C36;'>
-Created with care by **L.O, R.H, Z.E**
+Created with care by *L.O, R.H, Z.E*
 </div>
 """, unsafe_allow_html=True)
