@@ -102,6 +102,6 @@ else:
 st.markdown("""
 ---
 <div style='text-align: center; color: #5C2C36;'>
-Created with care by **L.O, R.H, Z.E**
+Created with care by L.O, R.H, Z.E
 </div>
 """, unsafe_allow_html=True)
