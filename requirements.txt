@@ -1,5 +1,5 @@
 tensorflow
-gradio
 opencv-python
 Pillow
 numpy
+streamlit
