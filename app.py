@@ -5,7 +5,7 @@ import cv2
 from PIL import Image
 
 # --- Page settings ---
-st.set_page_config(page_title="Hope in Pixels", layout="wide", page_icon="🎗")
+st.set_page_config(page_title="Hope in Pixels", layout="wide", page_icon="🎗️")
 
 # --- Custom CSS for background color and styling ---
 st.markdown("""
@@ -90,7 +90,7 @@ if uploaded_file:
     col1, col2 = st.columns(2)
 
     with col1:
-        st.image(display_img, caption="Original CT Scan", use_container_width=True)
+        st.image(np.clip(display_img, 0, 255).astype(np.uint8), caption="Original CT Scan", use_container_width=True)
 
     with col2:
         st.image(overlay_img, caption=" Grad-CAM Overlay", use_container_width=True)
@@ -102,6 +102,6 @@ else:
 st.markdown("""
 ---
 <div style='text-align: center; color: #5C2C36;'>
-Created with care by L.O, R.H, Z.E
+Created with care by **L.O, R.H, Z.E**
 </div>
 """, unsafe_allow_html=True)
