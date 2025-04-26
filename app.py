@@ -78,7 +78,7 @@ if uploaded_file:
 
     input_tensor, display_img = preprocess_image(image)
     prediction = model.predict(input_tensor)[0][0]
-    label = "🢨🎗️ Cancer" if prediction > 0.5 else "✅ Normal"
+    label = "🎗️ Cancer" if prediction > 0.5 else "✅ Normal"
     confidence = prediction if prediction > 0.5 else 1 - prediction
 
     st.markdown(f"### 🧠 Prediction: **{label}**")
