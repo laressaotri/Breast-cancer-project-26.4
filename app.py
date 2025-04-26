@@ -67,7 +67,7 @@ st.image("logo.png", width=250)
 
 # --- Title and description ---
 st.title("Hope in Pixels: Breast Cancer CT Classifier")
-st.write("Upload a **grayscale CT scan** to get a prediction and a sharp Grad-CAM heatmap overlay.")
+st.write("Upload a **2D CT scan** to get a prediction and a sharp Grad-CAM heatmap overlay.")
 
 # --- Upload and Predict ---
 uploaded_file = st.file_uploader("🩻 Upload a CT scan image (PNG, JPG)", type=["png", "jpg", "jpeg"])
